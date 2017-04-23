@@ -1,8 +1,8 @@
 rtk_hciattach:hciattach.c hciattach_rtk.o  
-	cc -o rtk_hciattach hciattach.c hciattach_rtk.o  
+	cc -m64 --static -o rtk_hciattach hciattach.c hciattach_rtk.o  
 
 hciattach_rtk.o:hciattach_rtk.c
-	cc -c hciattach_rtk.c
+	cc -m64 --static -c hciattach_rtk.c
 
 clean:
 	rm -f *.o  rtk_hciattach
