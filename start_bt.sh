@@ -6,10 +6,9 @@
 if [ "$1" = "" ]
 then
     # Find the TTY attached to the BT device
-    TTYSTRING=`dmesg -t | grep tty | grep MMIO | cut -b 14-18`
-    TTY=`expr substr "$TTYSTRING" 1 5`
+    TTY=`dmesg | grep ttyS | cut -b 32`
 
-    if [ "$TTYSTRING" = "" ]
+    if [ "$TTY" = "" ]
     then
 	echo
 	echo "No BT TTY device has been found"
@@ -20,7 +19,7 @@ then
 	exit 1
     fi
 else
-    # Use the TTY device mentioned oi the call
+    # Use the TTY device mentioned OI the call
     TTY=$1
 fi
 
