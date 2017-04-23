@@ -6,7 +6,7 @@
 if [ "$1" = "" ]
 then
     # Find the TTY attached to the BT device
-    TTY=`dmesg | grep ttyS | cut -b 32`
+    TTY=`dmesg | grep ttyS | cut -b 28-32`
 
     if [ "$TTY" = "" ]
     then
