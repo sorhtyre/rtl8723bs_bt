@@ -1361,6 +1361,7 @@ int main(int argc, char *argv[])
 	sigaction(SIGALRM, &sa, NULL);
 
 	/* 10 seconds should be enough for initialization */
+	alarm(10);
 	alarm(to);
 	bcsp_max_retries = to;
 
