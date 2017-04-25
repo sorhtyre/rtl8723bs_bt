@@ -15,5 +15,4 @@ fi
 TTY="/dev/$TTY"
 echo "Using device $TTY for Bluetooth"
 
-rtk_hciattach -n -s 115200 $TTY rtk_h5 > /storage/hciattach.txt 2>&1 &
-
+rtk_hciattach -n -s 115200 $TTY rtk_h5 > /storage/hciattach.txt 2>&1
