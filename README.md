@@ -10,10 +10,10 @@ Ensure Kernel is built to support GPIO RFKILL driver, support for Synopsys
 DesignWare 8250 quirks, and HCI UART driver with three-wire UART (H5)
 protocol support.
 
-CONFIG_RFKILL_GPIO=m
-CONFIG_SERIAL_8250_DW=m
-CONFIG_BT_HCIUART=m
-CONFIG_BT_HCIUART_3WIRE=y
+- CONFIG_RFKILL_GPIO=m
+- CONFIG_SERIAL_8250_DW=m
+- CONFIG_BT_HCIUART=m
+- CONFIG_BT_HCIUART_3WIRE=y
 
 
 ### Patches
