@@ -17,5 +17,8 @@ fi
 TTY="/dev/$TTY"
 echo "Using device $TTY for Bluetooth"
 
+# Slow the sample rate to a more managable level
+echo 30000 > /proc/sys/kernel/perf_event_max_sample_rate
+
 #Attach serial device via UART HCI to the Bluetooth stack
 rtk_hciattach -n -s 115200 $TTY rtk_h5 > /var/log/hciattach.log 2>&1 &
