@@ -14,7 +14,7 @@ clean:
 
 install:
 	mkdir -p /lib/firmware/rtl_bt
-	cp -p firmware/rtlbt_config /lib/firmware/rtl_bt/.
-	cp -p firmware/rtlbt_fw /lib/firmware/rtl_bt/.
+	cp -p firmware/rtl8723bs_btcnfg.bin /lib/firmware/rtl_bt/.
+	cp -p firmware/rtl8723bs_btfw.bin /lib/firmware/rtl_bt/.
 	cp -p rtk_hciattach /usr/bin/.
 	cp -p start_bt.sh /usr/bin/.

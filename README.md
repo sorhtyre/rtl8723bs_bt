@@ -27,9 +27,9 @@ Current dirver includes required patches:
 Verified against Linux kernel 4.9.13
 Current dirver includes required firmwares:
 - firmware/
-  - rtlbt_config
-  - rtlbt_fw
-  - rtlbt_fw_new			*[can be used, in certain cases, if renamed to rtlbt_fw]*
+  - rtl8723bs_btcnfg.bin
+  - rtl8723bs_btfw.bin
+  - rtl8723bs_btfw-new.bin			*[can be used, in certain cases, if renamed to rtl8723bs_btfw.bin]*
 
 
 ### Install
