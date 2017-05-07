@@ -27,15 +27,14 @@ Current dirver includes required patches:
 Verified against Linux kernel 4.9.13
 Current dirver includes required firmwares:
 - firmware/
-  - rtl8723bs_btcnfg.bin
-  - rtl8723bs_btfw.bin
-  - rtl8723bs_btfw-new.bin			*[can be used, in certain cases, if renamed to rtl8723bs_btfw.bin]*
+  - rtl8723bs_config.bin
+  - rtl8723bs_fw.bin
 
 
 ### Install
 ```
  make
  sudo make install
- sudo start_bt.sh
+ sudo start_rtkbt.sh
  
  ```
